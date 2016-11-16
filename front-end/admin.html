@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Admin</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style-adm.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div id="content" class="col-lg-4 col-lg-offset-1" >
+            <ul  id="list">
+                <li><div class="contet-type">Article</div> item 1 </li>
+                <li><div class="contet-type">Video</div>item 2 </li>
+                <li><div class="contet-type">Slide</div>item 3 </li>
+                <li><div class="contet-type">Article</div>item 4 </li>
+                <li><div class="contet-type">Video</div>item 5 </li>
+            </ul>
+        </div>
+        <div id="frame" class="col-lg-4 col-lg-offset-1">
+            <div id="divContent"></div>
+        </div>
+        <div id="settings" class="col-lg-4 col-lg-offset-1">
+            <form action="#" method="post">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Type
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="type" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">article</a></li>
+                        <li><a href="#">slideshow</a></li>
+                        <li><a href="#">video</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Upload...
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="upload" aria-labelledby="dropdownMenu2">
+                        <li><a href="html/vk.html">vk</a></li>
+                        <li><a href="html/sharePoint.html">SharePoint</a></li>
+                        <li><a href="html/twitter.html">Twitter</a></li>
+                        <li><a href="html/facebook.html">Facebook</a></li>
+                        <li><a href="#">upload...</a></li>
+                    </ul>
+                </div>
+                <div id="repeat">
+                    <input type="checkbox">
+                    <b>Repeat</b>
+                </div>
+                <button type="submit" id="succes" class="btn btn-success" onclick="addContent()">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script src="js/drag-n-drop.js"></script>
+<script src="js/slideshow.js"></script>
+<script src="js/article.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

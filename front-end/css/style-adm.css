@@ -1,0 +1,47 @@
+#content, #frame, #settings {
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #dddddd;
+    margin-top: 2%;
+}
+#settings, #content{
+    margin-bottom: 2%;
+}
+#frame{
+    height: 350px;
+    background: url("http://bestwallpaperhd.com/wp-content/uploads/2016/04/Abstract-Colorful-Smoke-Art.jpg") 100% 100% no-repeat;
+    background-size: cover;
+}
+#settings{
+    height: 300px;
+}
+#content{
+    height: 675px;
+}
+#dropdownMenu1, #dropdownMenu2, #repeat, #succes{
+    margin-top: 5%;
+}
+#succes{
+    margin-left: 40%;
+}
+#list li {
+    background: #c0c0c0;
+    height: 50px;
+    margin-top: 1%;
+    border-radius: 10px;
+}
+#list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.contet-type {
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #dddddd;
+    padding: 1%;
+    width: 5em;
+}
